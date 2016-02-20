@@ -1,0 +1,127 @@
+html, body, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: #222;
+}
+
+.container {
+  border-style: solid;
+  border-width: 26px 34px 27px 33px;
+  -moz-border-image: url(gxhead.png) 26 34 27 33 repeat;
+  -webkit-border-image: url(gxhead.png) 26 34 27 33 repeat;
+  -o-border-image: url(gxhead.png) 26 34 27 33 repeat;
+  border-image: url(gxhead.png) 26 34 27 33 fill repeat;
+
+  color: #ccc;
+
+  display: none;
+}
+
+a {
+  color: #527910;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #749B32;
+}
+
+.powered-by {
+  font-size: 90%;
+  color: #000;
+  font-style: italic;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.preset {
+  background-color: #DBCB9F;
+
+  overflow: hidden;
+  margin-bottom: 10px ;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.dark-border {
+  border-style: solid;
+  border-width: 27px;
+  -moz-border-image: url(gx_dark.png) 27 stretch;
+  -webkit-border-image: url(gx_dark.png) 27 stretch;
+  -o-border-image: url(gx_dark.png) 27 stretch;
+  border-image: url(gx_dark.png) 27 fill stretch;
+}
+
+.screw-border {
+  border-style: solid;
+  border-width: 27px;
+  -moz-border-image: url(screwhead.png) 27 repeat;
+  -webkit-border-image: url(screwhead.png) 27 repeat;
+  -o-border-image: url(screwhead.png) 27 repeat;
+  border-image: url(screwhead.png) 27 fill repeat;
+}
+
+.header {
+  padding: 0px 4px 10px 0px;
+}
+
+.name {
+  display:inline;
+  margin-right: 8px;
+  font-size: 120%;
+  text-shadow: 1px 1px 1px #749B32;
+}
+
+.author {
+  font-size: 80%;
+}
+
+.description {
+  padding: 0px 2px 15px 2px;
+  font-size: 90%;
+}
+
+.tags {
+  padding: 0px 0px 10px 0px;
+
+  float: left;
+  margin-bottom: 10px;
+}
+
+.tags span {
+  background-color: #749B32;
+  margin-left: 4px;
+  color: #222;
+}
+
+.buttons {
+  float: right;
+}
+
+.button {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 4px;
+  margin-top: 4px;
+}
