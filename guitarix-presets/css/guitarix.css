@@ -15,10 +15,10 @@ body {
 .container {
   border-style: solid;
   border-width: 26px 34px 27px 33px;
-  -moz-border-image: url(gxhead.png) 26 34 27 33 repeat;
-  -webkit-border-image: url(gxhead.png) 26 34 27 33 repeat;
-  -o-border-image: url(gxhead.png) 26 34 27 33 repeat;
-  border-image: url(gxhead.png) 26 34 27 33 fill repeat;
+  -moz-border-image: url(/img/gxhead.png) 26 34 27 33 repeat;
+  -webkit-border-image: url(/img/gxhead.png) 26 34 27 33 repeat;
+  -o-border-image: url(/img/gxhead.png) 26 34 27 33 repeat;
+  border-image: url(/img/gxhead.png) 26 34 27 33 fill repeat;
 
   color: #ccc;
 
@@ -54,19 +54,19 @@ a:hover {
 .dark-border {
   border-style: solid;
   border-width: 27px;
-  -moz-border-image: url(gx_dark.png) 27 stretch;
-  -webkit-border-image: url(gx_dark.png) 27 stretch;
-  -o-border-image: url(gx_dark.png) 27 stretch;
-  border-image: url(gx_dark.png) 27 fill stretch;
+  -moz-border-image: url(/img/gx_dark.png) 27 stretch;
+  -webkit-border-image: url(/img/gx_dark.png) 27 stretch;
+  -o-border-image: url(/img/gx_dark.png) 27 stretch;
+  border-image: url(/img/gx_dark.png) 27 fill stretch;
 }
 
 .screw-border {
   border-style: solid;
   border-width: 27px;
-  -moz-border-image: url(screwhead.png) 27 repeat;
-  -webkit-border-image: url(screwhead.png) 27 repeat;
-  -o-border-image: url(screwhead.png) 27 repeat;
-  border-image: url(screwhead.png) 27 fill repeat;
+  -moz-border-image: url(/img/screwhead.png) 27 repeat;
+  -webkit-border-image: url(/img/screwhead.png) 27 repeat;
+  -o-border-image: url(/img/screwhead.png) 27 repeat;
+  border-image: url(/img/screwhead.png) 27 fill repeat;
 }
 
 .header {
