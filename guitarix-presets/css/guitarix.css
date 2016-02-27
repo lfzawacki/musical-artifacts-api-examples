@@ -9,20 +9,42 @@ html, body, p {
 
 body {
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  background: #222;
+  background: #000;
 }
 
 .container {
-  border-style: solid;
-  border-width: 26px 34px 27px 33px;
-  -moz-border-image: url(../img/gxhead.png) 26 34 27 33 repeat;
-  -webkit-border-image: url(../img/gxhead.png) 26 34 27 33 repeat;
-  -o-border-image: url(../img/gxhead.png) 26 34 27 33 repeat;
-  border-image: url(../img/gxhead.png) 26 34 27 33 fill repeat;
-
   color: #ccc;
-
+  width:100%;
   display: none;
+}
+
+.contain {
+  color: #333333;
+  height:auto;
+  margin-bottom: 2px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.adjust {
+  text-overflow:ellipsed;
+  withe-space:nowrap;
+  overflow:hidden;
+  background-image: url(../img/handle_left.png),
+                    url(../img/handle_right.png),
+                    url(../img/background1.png);
+  background-repeat: repeat-y,
+                     repeat-y,
+                     repeat;
+  background-position: left,
+                       right,
+                       top left;
+}
+
+.just {
+  text-overflow:ellipsed;
+  withe-space:nowrap;
+  overflow:hidden;
 }
 
 a {
@@ -31,42 +53,32 @@ a {
 }
 
 a:hover {
-  color: #749B32;
+  color: #ff9000;
 }
 
 .powered-by {
   font-size: 90%;
-  color: #000;
+  color: #999;
   font-style: italic;
+  margin-top: 5px;
   margin-left: 10px;
   margin-bottom: 5px;
 }
 
 .preset {
   background-color: #DBCB9F;
-
   overflow: hidden;
-  margin-bottom: 10px ;
+  margin-bottom: 5px ;
   margin-left: -5px;
   margin-right: -5px;
 }
 
-.dark-border {
-  border-style: solid;
-  border-width: 27px;
-  -moz-border-image: url(../img/gx_dark.png) 27 stretch;
-  -webkit-border-image: url(../img/gx_dark.png) 27 stretch;
-  -o-border-image: url(../img/gx_dark.png) 27 stretch;
-  border-image: url(../img/gx_dark.png) 27 fill stretch;
-}
-
 .screw-border {
   border-style: solid;
-  border-width: 27px;
-  -moz-border-image: url(../img/screwhead.png) 27 repeat;
-  -webkit-border-image: url(../img/screwhead.png) 27 repeat;
-  -o-border-image: url(../img/screwhead.png) 27 repeat;
-  border-image: url(../img/screwhead.png) 27 fill repeat;
+  border-width: 35px;
+  -moz-border-image: url(../img/screw.png) 30 repeat;
+  -webkit-border-image: url(../img/screw.png) 30 repeat;
+  -o-border-image: url(../img/screw.png) 30 repeat;
 }
 
 .header {
@@ -91,15 +103,14 @@ a:hover {
 
 .tags {
   padding: 0px 0px 10px 0px;
-
   float: left;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .tags span {
-  background-color: #749B32;
+  background-color: #333;
   margin-left: 4px;
-  color: #222;
+  color: #ccc;
 }
 
 .buttons {
@@ -109,6 +120,7 @@ a:hover {
 .button {
   margin-right: 4px;
   margin-left: 4px;
+  color: #ff9000;
 }
 
 .badge {

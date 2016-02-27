@@ -1,14 +1,13 @@
 var presets_url = "https://musical-artifacts.com/artifacts.json?apps=guitarix";
-// var presets_url = "presets.json";
+var presets_url = "presets.json";
 
 $( document ).ready(function() {
 
   $.getJSON( presets_url, function( data ) {
     var items = [];
     $.each(data, function(_, preset) {
-      var item = '<div class="preset dark-border">';
-
-        item += '<div class="screw-border">';
+      var item = '<div class="contain adjust ">';
+       item += '<div class="screw-border just ">';
           item += "<div class='header'>";
             item += '<h2 class="name">' + preset.name +'</h2>';
             item += '<span class="author">by ' + preset.author + '</span>';
@@ -22,11 +21,13 @@ $( document ).ready(function() {
             });
           item += '</div>';
 
-          item += "<div class='buttons'>";
-            item += '<span class="download button"><a href="' + preset.file + '">';
-              item += '<i class="fa fa-download"> </i> (' + preset.download_count + ')';
+          item += "<div class=' tags'>";
+            item += '<span class="download button badge"><a href="' + preset.file + '">';
+              item += '<i class="fa fa-download"> download</i> (' + preset.download_count + ')';
             item += '</a> </span>';
-            item += '<span class="favorites button"> <i class="fa fa-star"> </i> (' + preset.favorite_count + ') </div>';
+           item += "</div>";
+          item += "<div class='buttons'>";
+           item += '<span class="favorites button"> <i class="fa fa-star"> </i> (' + preset.favorite_count + ') </div>';
           item += "</div>";
 
         item += '</div>';
