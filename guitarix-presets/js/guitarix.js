@@ -1,5 +1,5 @@
 var presets_url = "https://musical-artifacts.com/artifacts.json?apps=guitarix";
-var presets_url = "presets.json";
+// var presets_url = "presets.json";
 
 $( document ).ready(function() {
 
@@ -21,13 +21,11 @@ $( document ).ready(function() {
             });
           item += '</div>';
 
-          item += "<div class=' tags'>";
-            item += '<span class="download button badge"><a href="' + preset.file + '">';
-              item += '<i class="fa fa-download"> download</i> (' + preset.download_count + ')';
+          item += '<div class="buttons">';
+            item += '<span class="badge download button"><a href="' + preset.file + '">';
+              item += '<i class="fa fa-download"></i> Download (' + preset.download_count + ')';
             item += '</a> </span>';
-           item += "</div>";
-          item += "<div class='buttons'>";
-           item += '<span class="favorites button"> <i class="fa fa-star"> </i> (' + preset.favorite_count + ') </div>';
+           item += '<span class="badge favorites button"> <i class="fa fa-star"> </i> (' + preset.favorite_count + ') </div>';
           item += "</div>";
 
         item += '</div>';

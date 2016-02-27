@@ -108,29 +108,29 @@ a:hover {
 }
 
 .tags span {
-  background-color: #333;
   margin-left: 4px;
   color: #ccc;
 }
 
 .buttons {
   float: right;
+  margin-right: 10px;
 }
 
 .button {
-  margin-right: 4px;
+  margin-right: 8px;
   margin-left: 4px;
   color: #ff9000;
 }
 
 .badge {
+  background-color: #333;
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px 3px 7px;
   font-size: 12px;
   font-weight: bold;
   line-height: 1;
-  color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
