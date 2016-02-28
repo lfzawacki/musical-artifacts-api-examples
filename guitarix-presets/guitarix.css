@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: RobotoCondensed, sans-serif;
+    font-weight: 300;
+    background: #222;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+body.loading::after {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8) url(images/loading.gif) 50% 50% no-repeat;
+}
+
+a {
+    color: #77994F;
+    text-decoration: none;
+}
+h2 {
+    color: #77994F;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    padding-right: 4.5em;
+}
+
+#header {
+    height: 3em;
+    line-height: 3em;
+    background: #222;
+    background-image: url(images/logo.svg);
+    background-position: 1em 0.5em;
+    background-repeat: no-repeat;
+    background-size: auto 2em;
+    text-align: right;
+    padding: 0 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #666;
+    z-index: 1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.has_filters #header {
+    height: 4.5em;
+}
+
+#filters {
+    line-height: 1em;
+}
+.filter {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    padding: 0 0.5em 0 1em;
+    background-image: url(images/x.svg);
+    background-repeat: no-repeat;
+    background-position: 0.3em 50%;
+    background-size: 0.5em 0.5em;
+    color: #222;
+    display: inline-block;
+    margin: 0.1em;
+    cursor: pointer;
+    font-weight: 700;
+}
+.filter.tag_filter {
+    background-color: #77994F;
+}
+.filter.query_filter {
+    background-color: #F29446;
+}
+
+#presets {
+    padding: 4em 1em 1em 1em;
+}
+.has_filters #presets {
+    padding: 5.5em 1em 1em 1em;
+}
+
+.preset {
+    margin-bottom: 1em;
+    background: rgba(17, 17, 17, 0.9);
+    padding: 1em;
+    position: relative;
+}
+.preset::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.author {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    color: #F29446;
+    font-style: italic;
+    cursor: pointer;
+}
+.author::before {
+    content: "Author: ";
+    color: white;
+}
+.description {
+    line-height: 1.2em;
+    max-height: 3.6em;
+    overflow: hidden;
+    cursor: pointer;
+}
+.description.more {
+    max-height: 100000em;
+}
+.info {
+    position: absolute;
+    top: 1em;
+    width: 4em;
+    padding-left: 1.25em;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: auto 1em;
+}
+.downloads {
+    right: 1em;
+    background-image: url(images/downloads.svg);
+}
+.likes {
+    right: 5em;
+    background-image: url(images/star.svg);
+}
+
+.tags {
+    margin-top: 1em;
+    float: left;
+    width: calc(100% - 9em);
+}
+.tag {
+    border: 1px solid #77994F;
+    padding: 0.1em 0.5em;
+    margin: 0 4px 4px 0;
+    background: #77994F;
+    color: #222;
+    font-weight: bold;
+    white-space: nowrap;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.download {
+    background: #77994F url(images/download.svg) 0.5em 50% no-repeat;
+    background-size: auto 1.5em;
+    color: #222;
+    height: 2em;
+    line-height: 3em;
+    text-decoration: none;
+    display: block;
+    float: right;
+    padding: 0 0.5em 0 2.5em;
+    margin-top: 1em;
+    transition: background-color 0.5s;
+}
+.download::after {
+    content: "Download";
+    line-height: 2em;
+    font-weight: 400;
+}
+.download:hover {
+    background-color: #F29446;
+}
+
+.alert {
+    background: rgba(17, 17, 17, 0.9);
+    background-image: url(images/alert.svg);
+    background-position: 50% 1em;
+    background-repeat: no-repeat;
+    background-size: auto 3.5em;
+    text-align: right;
+    padding: 5em 1em 1em 1em;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.alert small {
+    display: block;
+    font-size: 0.8em;
+    line-height: 2em;
+}
