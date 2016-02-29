@@ -34,11 +34,11 @@ var remove_filter = function (span, list) {
     if (!str || pos < 0) return;
     filters[list].splice(pos, 1);
     span.parentElement.removeChild(span);
+    run_filters();
     for (var l in filters)
         if (filters[l].length)
             return;
     document.body.classList.remove("has_filters");
-    run_filters();
 }
 
 var run_filters = function () {
@@ -62,6 +62,7 @@ var clear = function () {
     var p = document.getElementById("presets");
     while (p.firstChild)
         p.removeChild(p.firstChild);
+    had_error = false;
 }
 
 var ajax = function (onsuccess, query) {
